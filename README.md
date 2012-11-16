@@ -30,4 +30,4 @@ usage:
 ```
 
 
-![Description of the script](roidelapluie.github.com/deployment-script-POC/continuous_deployment.png)
+![Description of the script](https://raw.github.com/roidelapluie/deployment-script-POC/master/continuous_deployment.png)
