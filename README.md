@@ -3,7 +3,11 @@ continuous deployment script POC
 
 This script is made to deploy RPM packages after Jenkins sent them to your repository.
 
-You just need to chose a file location (e.g /tmp/to_be_deployed), and make jenkins write the package name to update into it.
+You just need to chose a file location. (e.g /tmp/to_be_deployed), and make jenkins write the package name to update into it.
+
+```bash
+echo ${PACKAGE_NAME}:${PACKAGE_VERSION}:${REPOSITORY} >> /tmp/to_be_deployed
+```
 
 Example of to_be_deployed file:
 ```
