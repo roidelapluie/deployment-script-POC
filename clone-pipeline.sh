@@ -1,8 +1,14 @@
 #!/bin/bash
+# USAGE: ./clone-pipeline.sh first-job -devel
+#   will clone first-job to  first-job-devel, second-job to second-job-devel, etc...
+
+
 FIRST_JOB="$1"
 APPEND="$2"
 [ -z "$APPEND" ] && exit 2
 [ -d "/var/lib/jenkins/jobs/${jobname}" ] || exit 3
+
+
 
 rename_job(){
     jobname="$1"
